@@ -113,6 +113,11 @@ h1, h2, h3, h4, h5, h6 {
   background: rgba(26, 24, 22, 0.85);
 }
 
+#header.header-scrolled .logo img {
+  padding: 0;
+  max-height: 50px;
+}
+
 #header .logo h1 {
   font-size: 28px;
   margin: 0;
@@ -127,9 +132,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header .logo img {
-  padding: 0;
+  padding-top: 15px;
   margin: 0;
-  max-height: 40px;
+  max-height: 120px;
 }
 
 /*--------------------------------------------------------------
@@ -1551,6 +1556,11 @@ section {
   font-size: 14px;
   text-align: center;
   padding: 30px 0;
+}
+
+#footer spanBlack {
+  color: #000000;
+  font-size: 14px;
 }
 
 #footer h3 {
