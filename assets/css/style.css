@@ -158,8 +158,31 @@ h1, h2, h3, h4, h5, h6 {
   white-space: nowrap;
 }
 
+.book-a-table-btn-drop {
+  background: #F7941C;
+  color: #ffa012;
+  border-radius: 50px;
+  margin: 0 0 0 0px;
+  padding: 10px 25px;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: 0.3s;
+  white-space: nowrap;
+}
+
 .book-a-table-btn:hover {
   background: #ffa012;
+  color: #fff;
+}
+
+.book-a-table-btn-drop:hover {
+  background: #fff;
+  color: #ffa012;
+}
+
+.book-a-table-btn-drop li:hover {
+  background: #fff;
   color: #fff;
 }
 
@@ -240,11 +263,33 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 5px;
 }
 
+.navbar .dropdownt .active, .navbar .dropdownt li:hover > a {
+  color: #FFF;
+}
+
 .navbar a:hover, .navbar .active, .navbar li:hover > a {
   color: #F7941C;
 }
 
+
+
 .navbar .dropdown ul {
+  display: block;
+  position: absolute;
+  left: 24px;
+  top: calc(100% + 30px);
+  margin: 0;
+  padding: 10px 0;
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  transition: 0.3s;
+  border-radius: 4px;
+}
+
+.navbar .dropdownt ul {
   display: block;
   position: absolute;
   left: 24px;
@@ -275,7 +320,26 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 12px;
 }
 
+.navbar .dropdownt ul li {
+  min-width: 200px;
+}
+
+.navbar .dropdownt ul a {
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #433f39;
+}
+
+.navbar .dropdownt ul a i {
+  font-size: 12px;
+}
+
 .navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
+  color: #F7941C;
+}
+
+.navbar .dropdownt ul a:hover, .navbar .dropdownt ul .active:hover, .navbar .dropdownt t ul li:hover > a {
   color: #F7941C;
 }
 
@@ -303,6 +367,34 @@ h1, h2, h3, h4, h5, h6 {
     left: -90%;
   }
   .navbar .dropdown .dropdown:hover > ul {
+    left: -100%;
+  }
+}
+
+.navbar .dropdownt:hover > ul {
+  opacity: 1;
+  top: 100%;
+  visibility: visible;
+}
+
+.navbar .dropdownt .dropdownt ul {
+  top: 0;
+  left: calc(100% - 30px);
+  visibility: hidden;
+}
+
+.navbar .dropdownt .dropdownt:hover > ul {
+  opacity: 1;
+  top: 0;
+  left: 100%;
+  visibility: visible;
+}
+
+@media (max-width: 1366px) {
+  .navbar .dropdownt .dropdownt ul {
+    left: -90%;
+  }
+  .navbar .dropdownt .dropdownt:hover > ul {
     left: -100%;
   }
 }
