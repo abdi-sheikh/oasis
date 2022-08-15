@@ -1041,9 +1041,6 @@
   .bx-chevron-down:before {
     content: "\e9ac";
   }
-  .bx-chevron-downy:after {
-    content: "\e9ac";
-  }
   .bx-chevron-down-circle:before {
     content: "\e9ad";
   }
